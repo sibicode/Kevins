@@ -1,0 +1,7 @@
+=s($name)
+	background: url('../img/sprites/' + $name + '.png') 0 0 no-repeat
+
+=sr($name)
+	+s($name)
+	+retina
+		background: url('../img/sprites/' + $name + '@2x.png') 0 0 no-repeat

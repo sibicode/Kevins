@@ -1,0 +1,53 @@
+{
+  "name": "gulp-start-tempalate",
+  "version": "0.0.2",
+  "description": "Start your project with 'Gulp Start Template'",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "start",
+    "tempalate"
+  ],
+  "author": "Evgeniy Goryachev",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "node-notifier": "^5.1.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-sprites": "^2.0.3",
+    "yargs": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibicode/iLoveKevin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sibicode/iLoveKevin/issues"
+  },
+  "homepage": "https://github.com/sibicode/iLoveKevin#readme"
+}

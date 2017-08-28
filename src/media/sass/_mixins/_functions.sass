@@ -1,0 +1,5 @@
+@function to-percents($value, $context, $units: %)
+  @return $value / $context * 100 + $units
+
+@function to-rem($value, $context: $default-font-size)
+  @return #{$value / $context}rem

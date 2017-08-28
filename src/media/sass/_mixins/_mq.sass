@@ -1,0 +1,26 @@
+@mixin mq($media)
+	@if $media == mq480
+		@media only screen and (min-width: 30em)
+			@content
+
+	@else if $media == mq600
+		@media only screen and (min-width: 36em)
+			@content
+
+	@else if $media == mq768
+		@media only screen and (min-width: 48em)
+			@content
+
+	@else if $media == mq992
+		@media only screen and (min-width: 62em)
+			@content
+
+	@else if $media == mq1382
+		@media only screen and (min-width: 86em)
+			@content
+
+	@else if $media == mqHi
+		@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (min-device-pixel-ratio: 1.5)
+			@content
+
+
