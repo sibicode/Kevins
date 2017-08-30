@@ -47,7 +47,8 @@
         </div>
         <h4 class="about-item__title">Единый источник данных</h4>
         <p class="about-item__text">Наша система каждые 2 часа будет обновлять данные из ваших источников. В отчетах вам будет доступна статистика за
-          сегодня.</p>
+          сегодня.
+        </p>
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
@@ -56,7 +57,8 @@
           </svg>
         </div>
         <h4 class="about-item__title">Безопасность</h4>
-        <p class="about-item__text">Все информация надежно защищена. Разработчик сервиса eLama.ru гарантирует, что ваши данные или данные ваших клиентов никогда не попадут в руки третьих лиц</p>
+        <p class="about-item__text">Все информация надежно защищена. Разработчик сервиса eLama.ru гарантирует, что ваши данные или данные ваших клиентов
+          никогда не попадут в руки третьих лиц</p>
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
@@ -65,7 +67,8 @@
           </svg>
         </div>
         <h4 class="about-item__title">Любые возможности для продвинутых пользователей</h4>
-        <p class="about-item__text">Свободный доступ к данным рекламных систем и нашим инструментам. Создавайте собственные шаблоны в Power BI, и не платите за сервис и хранение данных</p>
+        <p class="about-item__text">Свободный доступ к данным рекламных систем и нашим инструментам. Создавайте собственные шаблоны в Power BI, и не
+          платите за сервис и хранение данных</p>
       </div>
 
     </div>
@@ -75,7 +78,32 @@
 
 <section class="registration" id="registration">
   <div class="container">
+
     <h2 class="registration__title">Регистрация</h2>
-    <p class="registration__info">С 2009 г. eLama.ru упрощает работу с контекстной рекламой. Мы не только выступаем на конференциях, а на собственном опыте знаем, как работает контекстная реклама. Поэтому мы понимаем, какие данные нужны каждой категории пользователей. Зарегистрируйтесь и убедитесь.</p>
+    <p class="registration__info">С 2009 г. eLama.ru упрощает работу с контекстной рекламой. Мы не только выступаем на конференциях, а на собственном опыте
+      знаем, как работает контекстная реклама. Поэтому мы понимаем, какие данные нужны каждой категории пользователей. Зарегистрируйтесь
+      и убедитесь.</p>
+
+    <form class="reg-form">
+
+      <div class="reg-form__row">
+        <input class="reg-form__input" type="text" placeholder="Имя" name="name">
+      </div>
+      <div class="reg-form__row">
+        <input class="reg-form__input" type="text" placeholder="Логин" name="login">
+      </div>
+      <div class="reg-form__row">
+        <input class="reg-form__input" type="text" placeholder="Пароль" name="password">
+      </div>
+      <div class="reg-form__row">
+        <input class="reg-form__checkbox" id="checkbox" type="checkbox" name="checkbox">
+        <label class="reg-form__label _checkbox" for="checkbox">Я даю своё <a href="#" class="reg-form__link link _underlined">согласие</a> на обработку моих персональных данных </label>
+      </div>
+      <div class="reg-form__row">
+        <button class="reg-form__btn" type="submit">Зарегистрироваться</button>
+      </div>
+
+    </form>
+
   </div>
 </section>
