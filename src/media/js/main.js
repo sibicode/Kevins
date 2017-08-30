@@ -1,23 +1,40 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-	console.log("DOM fully loaded and parsed!");
-});
-
-
-function SVGSprites() {
-    this.$container = $('<div style="width:0;height:0;overflow:hidden"></div>').prependTo(document.body);
-    var self = this;
-
-    $.get('../svg/sprite.svg', function (data) {
-        self.$container.append(typeof XMLSerializer != 'undefined'
-             ? (new XMLSerializer()).serializeToString(data.documentElement)
-             : $(data.documentElement).html());
-    });
+// Слайдер преимущества
+$slick_slider = $('.about__list');
+settings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    dots: true,
+    dotsClass: 'about-dots',
+    mobileFirst: true,
+    responsive: [{
+        breakpoint: 767,
+        settings: 'unslick'
+    }]
 }
+$slick_slider.slick(settings);
 
-SVGSprites.prototype = {
-    addToContainer: function (html) {
-        return $(html).appendTo(this.$container);
-    },
-};
+function windowSize() {
+    if ($(window).width() > 767) {
 
-SVGSprites();
+        if ($slick_slider.hasClass('slick-initialized')) {
+            $slick_slider.slick('unslick');
+        }
+    }
+}
+$(window).on('load', windowSize);
+
+$(window).on('resize', function () {
+    if ($(window).width() > 767) {
+        if ($slick_slider.hasClass('slick-initialized')) {
+            $slick_slider.slick('unslick');
+        }
+        return
+    }
+
+    if (!$slick_slider.hasClass('slick-initialized')) {
+        return $slick_slider.slick(settings);
+    }
+});
