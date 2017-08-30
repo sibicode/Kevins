@@ -2,6 +2,10 @@
   position: relative
   color: $color-accent
 
+  &:hover
+    &:after
+      background-color: $color-second
+
   &:after
     content: ''
     display: block
@@ -11,6 +15,7 @@
     width: 100%
     height: 2px
     background-color: rgba($color-second, .5)
+    transition: background-color .25s
 
 .btn
   display: inline-block

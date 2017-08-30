@@ -1,23 +1,38 @@
 .about
-  padding: 60px 0 35px
+  padding: 60px 0 65px
+  +mq("mq768")
+    padding: 60px 0 40px
   &__title
     margin-bottom: 20px
     font-size: 30px
     line-height: 1
     color: $color-accent
     text-align: center
+    +mq("mq768")
+      margin-bottom: 60px
 
   &__list
     position: relative
-    padding-bottom: 30px
+    +mq("mq768")
+      display: flex
+      flex-wrap: wrap
+
+  &__item
+    width: calc( 100%/3 - 20px )
+    margin: 0 10px 50px
 
 
 .about-item
   text-align: center
+  +mq("mq768")
+    text-align: left
 
   &__preview
     min-height: 82px
     margin-bottom: 25px
+    +mq("mq768")
+      min-height: 85px
+      margin-bottom: 10px
 
   &__img
     margin: auto

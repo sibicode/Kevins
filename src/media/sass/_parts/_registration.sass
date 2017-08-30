@@ -1,22 +1,32 @@
 .registration
   padding: 30px 0 50px
   text-align: center
+  +mq("mq768")
+
 
   &__title
     margin-bottom: 25px
     font-size: 24px
-    line-height: 1.25
+    line-height: 30px
     color: $color-accent
+    +mq("mq768")
+      font-size: 30px
+      line-height: 35px
 
   &__info
     margin-bottom: 30px
     line-height: 24px
     color: #002543
+    +mq("mq768")
+      margin-bottom: 40px
 
 .reg-form
   display: flex
   flex-wrap: wrap
   flex-direction: column
+  +mq("mq768")
+    max-width: 300px
+    margin: 0 auto
 
   &__row
     margin-bottom: 10px
@@ -27,6 +37,9 @@
     &._checkbox
       margin-top: 25px
       margin-bottom: 17px
+      +mq("mq768")
+        margin-top: 15px
+        margin-bottom: 27px
 
   &__input
     width: 100%
