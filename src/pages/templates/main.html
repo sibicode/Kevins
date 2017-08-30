@@ -1,7 +1,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero__descr">
-      <h1 class="hero__title">Автоматические отчеты по контекстной рекламе</h1>
+      <h1 class="hero__title">Автоматические отчеты по&nbsp;контекстной рекламе</h1>
       <p class="hero__text">Собирает данные из рекламных систем и превращает их в понятные отчеты для маркетолога, руководителя, клиента за 8 минут</p>
     </div>
   </div>
@@ -10,40 +10,33 @@
 <section class="about" id="about">
   <div class="container">
 
+    <h2 class="about__title">Что вам это даст</h2>
     <div class="about__list">
 
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-clock"></use>
-          </svg>
+          <img class="about-item__img" src="/img/clock.svg" alt="">
         </div>
         <h4 class="about-item__title">Экономию ресурсов</h4>
         <p class="about-item__text">Вам не понадобятся специальные знания или помощь программистов, чтобы получить готовый отчет</p>
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-share"></use>
-          </svg>
+          <img class="about-item__img" src="/img/time.svg" alt="">
         </div>
         <h4 class="about-item__title">Скорость</h4>
         <p class="about-item__text">Первичная настройка займет у вас не более 15 минут, а обновление данных происходит автоматически</p>
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-share"></use>
-          </svg>
+          <img class="about-item__img" src="/img/board.svg" alt="">
         </div>
         <h4 class="about-item__title">Только нужные метрики</h4>
         <p class="about-item__text">Вы выбираете тип шаблона в зависимости от своих задач: для маркетолога, руководителя или клиентаи</p>
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-share"></use>
-          </svg>
+          <img class="about-item__img" src="/img/laptop.svg" alt="">
         </div>
         <h4 class="about-item__title">Единый источник данных</h4>
         <p class="about-item__text">Наша система каждые 2 часа будет обновлять данные из ваших источников. В отчетах вам будет доступна статистика за
@@ -52,9 +45,7 @@
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-share"></use>
-          </svg>
+          <img class="about-item__img" src="/img/security.svg" alt="">
         </div>
         <h4 class="about-item__title">Безопасность</h4>
         <p class="about-item__text">Все информация надежно защищена. Разработчик сервиса eLama.ru гарантирует, что ваши данные или данные ваших клиентов
@@ -62,9 +53,7 @@
       </div>
       <div class="about-item about__item">
         <div class="about-item__preview">
-          <svg class="about-item__icon">
-            <use xlink:href="#icon-share"></use>
-          </svg>
+          <img class="about-item__img" src="/img/peak.svg" alt="">
         </div>
         <h4 class="about-item__title">Любые возможности для продвинутых пользователей</h4>
         <p class="about-item__text">Свободный доступ к данным рекламных систем и нашим инструментам. Создавайте собственные шаблоны в Power BI, и не
@@ -93,14 +82,14 @@
         <input class="reg-form__input" type="text" placeholder="Логин" name="login">
       </div>
       <div class="reg-form__row">
-        <input class="reg-form__input" type="text" placeholder="Пароль" name="password">
+        <input class="reg-form__input" type="password" placeholder="Пароль" name="password">
       </div>
-      <div class="reg-form__row">
+      <div class="reg-form__row _checkbox">
         <input class="reg-form__checkbox" id="checkbox" type="checkbox" name="checkbox">
         <label class="reg-form__label _checkbox" for="checkbox">Я даю своё <a href="#" class="reg-form__link link _underlined">согласие</a> на обработку моих персональных данных </label>
       </div>
       <div class="reg-form__row">
-        <button class="reg-form__btn" type="submit">Зарегистрироваться</button>
+        <button class="reg-form__btn btn" type="submit" disabled>Зарегистрироваться</button>
       </div>
 
     </form>
