@@ -1,0 +1,91 @@
+.registration
+  padding: 30px 0 50px
+  text-align: center
+
+  &__title
+    margin-bottom: 25px
+    font-size: 24px
+    line-height: 1.25
+    color: $color-accent
+
+  &__info
+    margin-bottom: 30px
+    line-height: 24px
+    color: #002543
+
+.reg-form
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+
+  &__row
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
+
+    &._checkbox
+      margin-top: 25px
+      margin-bottom: 17px
+
+  &__input
+    width: 100%
+    padding: 15px 20px
+    line-height: 1.2
+    font-size: 15px
+    color: $color-accent
+    background: #F4F5F9
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    outline: none
+
+    +placeholder
+      color: rgba(0, 37, 67, 0.5)
+
+  &__checkbox
+    position: absolute
+    opacity: 0
+
+    & + label
+      position: relative
+      display: block
+      width: 100%
+      padding-left: 35px
+      line-height: 1.28
+      font-size: 14px
+      color: #525252
+      text-align: left
+      cursor: pointer
+
+    & + label:before
+      content: ''
+      position: absolute
+      left: 0
+      top: -5px
+      width: 24px
+      height: 24px
+      background: #F4F5F9
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      box-sizing: border-box
+      border-radius: 5px
+
+    &:checked + label:before
+      background: #F4F5F9 url("../img/tick.svg") 50% 50% no-repeat
+
+  &__btn
+    width: 100%
+    background-color: $color-second
+
+    &:disabled
+      background-color: rgba($color-second,.5)
+
+
+
+
+
+
+
+.subscribe-form input[type=submit]:disabled
+  background-color: #ccc
+  cursor: default
+
