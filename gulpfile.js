@@ -75,7 +75,7 @@ var PATHS = {
   },
   src: {
     html: 'src/pages/*.html',
-    js: 'src/media/js/script.js',
+    js: 'src/media/js/main.js',
     jslibs: 'src/media/js/libs.js',
     style: 'src/media/sass/main.sass',
     img: 'src/media/img/**/*.*',
@@ -85,7 +85,7 @@ var PATHS = {
   },
   watch: {
     html: 'src/pages/**/*.html',
-    js: 'src/media/js/script.js',
+    js: 'src/media/js/main.js',
     style: 'src/media/sass/**/*',
     img: 'src/media/img/**/*.*',
     fonts: 'src/media/fonts/**/*.*',
