@@ -3,28 +3,43 @@
   border-top: 1px solid rgba(0, 37, 67, .2)
   text-align: center
   +mq("mq768")
-    padding: 45px 0
+    padding: 50px 0
+  +mq("mq992")
+    // padding: 50px 0
+
+  .container
+    +mq("mq992")
+      display: flex
+      flex-wrap: wrap
 
   &__logo
-    margin-bottom: 30px
+    margin-bottom: 40px
+    +mq("mq992")
+      margin-bottom: 0
 
   &__contacts
 
     +mq("mq768")
       max-width: 720px
-      margin: auto
+      margin: 0 auto
+    +mq("mq992")
+      max-width: initial
+      flex-grow: 1
+      margin: 0 65px
+      text-align: left
 
   &__share
     margin-bottom: 30px
     +mq("mq768")
       margin-bottom: 35px
+    +mq("mq992")
+      margin: 0 auto 30px
 
 .contacts
 
   +mq("mq768")
     display: flex
     flex-wrap: wrap
-    // flex-direction: column
     justify-content: space-around
 
   &__item
@@ -35,6 +50,11 @@
       &:last-child
         width: 100%
         margin-bottom: 40px
+        +mq("mq992")
+          width: auto
+
+    +mq("mq992")
+      margin: 0 10px 30px
 
   &__link
     display: inline-block
@@ -57,6 +77,10 @@
 
 .share
   // padding-top: 5px
+  +mq("mq992")
+    // display: flex
+    // align-items: flex-start
+    // flex-wrap: wrap
 
   &__link
     padding: 10px 17px 8px
@@ -76,8 +100,13 @@
     margin-top: 10px
     font-size: 14px
     color: #525252
+    +mq("mq992")
+      width: 100%
 
 
 .policy
+  +mq("mq992")
+    width: 100%
+
   &__link
     font-size: 14px

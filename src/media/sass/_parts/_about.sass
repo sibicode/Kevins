@@ -1,15 +1,22 @@
 .about
-  padding: 60px 0 65px
+  padding: 60px 0 35px
   +mq("mq768")
-    padding: 60px 0 40px
+    padding: 60px 0 20px
+  +mq("mq992")
+    padding: 100px 0 45px
+
   &__title
     margin-bottom: 20px
     font-size: 30px
+    font-weight: bold
     line-height: 1
     color: $color-accent
     text-align: center
     +mq("mq768")
       margin-bottom: 60px
+    +mq("mq992")
+      margin-bottom: 65px
+      font-size: 36px
 
   &__list
     position: relative
@@ -18,28 +25,47 @@
       flex-wrap: wrap
 
   &__item
-    width: calc( 100%/3 - 20px )
-    margin: 0 10px 50px
+    width: calc( 100%/3 - 26px )
+    margin: 0 10px 30px
+    +mq("mq768")
+      margin: 0 10px 50px 15px
 
+    +mq("mq992")
+      display: flex
+      margin: 0 10px 50px
 
 .about-item
   text-align: center
+  outline: none
   +mq("mq768")
     text-align: left
+    &:nth-child(n+4)
+      .about-item__preview
+        min-height: 68px
 
   &__preview
     min-height: 82px
-    margin-bottom: 25px
+    margin-bottom: 23px
     +mq("mq768")
-      min-height: 85px
-      margin-bottom: 10px
+      min-height: 90px
+      margin-bottom: 5px
+    +mq("mq992")
+      // flex-basis: 100px
+      min-width: 100px
 
   &__img
     margin: auto
 
+  &__info
+    +mq("mq992")
+      max-width: 260px
+
   &__title
-    margin-bottom: 10px
+    margin-bottom: 5px
+    line-height: 24px
     color: $color-accent
+    +mq("mq768")
+      margin-bottom: 7px
 
   &__text
     line-height: 24px

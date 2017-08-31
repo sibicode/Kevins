@@ -1,9 +1,14 @@
 .header
+  position: relative
   height: 60px
   background: #fff
   box-shadow: 0px 2px 3px rgba(0, 37, 67, 0.12)
+  z-index: 1
   +mq("mq768")
     height: 80px
+  +mq("mq992")
+    height: 120px
+
   .container
     display: flex
     +mq("mq768")
@@ -14,6 +19,8 @@
     margin: 20px auto 0
     +mq("mq768")
       margin: 0 0 0 25px
+    +mq("mq992")
+      margin: 15px 0 0 0
 
   &__nav
     display: none
@@ -21,17 +28,30 @@
       display: block
       margin-top: 20px
       margin-right: 10px
+    +mq("mq992")
+      margin-top: 15px
+      margin-right: 0
 
 .logo
   &__text
     font-size: 24px
-    line-height: 1.6
+    line-height: 28px
     color: $color-accent
     font-weight: 800
+    +mq("mq992")
+      font-size: 30px
+      line-height: 35px
+
+    &._medium
+      +mq("mq992")
+        font-size: 24px
+        line-height: 28px
+
 
 .site-nav
   &__link
     font-size: 10px
+    line-height: 12px
     font-weight: bold
     text-transform: uppercase
     color: $color-accent
@@ -39,3 +59,5 @@
 
     &:first-child
       margin-right: 20px
+      +mq("mq992")
+        margin-right: 15px

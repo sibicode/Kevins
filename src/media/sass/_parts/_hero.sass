@@ -1,10 +1,25 @@
 .hero
-  background-color: #D8D8D8
+  position: relative
+  min-height: 400px
+  background-color: rgba(#D8D8D8, .1)
+  background-image: url(../img/spacey-m.jpg)
+  background-repeat: no-repeat
+  background-position: 0 0
   padding: 68px 0 85px
   +mq("mq768")
     min-height: 600px
     padding: 85px 0 90px
+    background-color: #D8D8D8
+    background-image: url(../img/spacey-t.jpg)
+  +mq("mq992")
+    min-height: 500px
+    padding: 150px 0 50px
+    background-image: url(../img/spacey-d.jpg)
 
+  .container
+    +mq("mq992")
+      display: flex
+      align-items: center
 
   &__descr
     text-align: center
@@ -13,6 +28,9 @@
       max-width: 390px
       margin-left: auto
       text-align: left
+    +mq("mq992")
+      width: 70%
+      max-width: 725px
 
   &__title
     margin-bottom: 30px
@@ -20,6 +38,11 @@
     font: 32px/30px $second-font
     +mq("mq768")
       margin-bottom: 35px
+    +mq("mq992")
+      margin-bottom: 30px
+      font-size: 44px
+      line-height: 40px
+      font-weight: bold
 
   &__text
     color: #525252
