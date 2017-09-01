@@ -38,3 +38,10 @@ $(window).on('resize', function () {
         return $slick_slider.slick(settings);
     }
 });
+
+
+var checkBoxes = $('.reg-form__checkbox');
+checkBoxes.change(function () {
+    $('#reg-form-btn').prop('disabled', checkBoxes.filter(':checked').length < 1);
+});
+checkBoxes.change();
